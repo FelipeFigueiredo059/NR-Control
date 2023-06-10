@@ -21,7 +21,9 @@ const Curso = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3005/funcionario")
+      .get(
+        "http://http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/funcionario"
+      )
       .then((response) => setUsers(response.data))
       .catch((err) => console.log(err));
   }, []);
@@ -30,11 +32,14 @@ const Curso = () => {
     event.preventDefault();
     const id = users.length > 0 ? users[users.length - 1].id + 1 : 1;
     axios
-      .post("http://localhost:3005/funcionario", {
-        id: id,
-        name: name,
-        curso: curso,
-      })
+      .post(
+        "http://http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com//funcionario",
+        {
+          id: id,
+          name: name,
+          curso: curso,
+        }
+      )
       .then((response) => {
         if (response.status === 201) {
           setUsers([...users, response.data]);

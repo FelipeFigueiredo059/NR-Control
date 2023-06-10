@@ -61,11 +61,15 @@ const HomePage = () => {
     }
 
     axios
-      .post("http://localhost:3005/register", data, {
-        headers: {
-          Authorization: "Bearer " + accessToken,
-        },
-      })
+      .post(
+        "http://http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/register",
+        data,
+        {
+          headers: {
+            Authorization: "Bearer " + accessToken,
+          },
+        }
+      )
       .then((response) => {
         console.log("IT WORKED");
       })

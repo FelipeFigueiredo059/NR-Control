@@ -16,9 +16,13 @@ function List() {
 
   const [listOfEmployees, setListOfEmployees] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3005/register").then((response) => {
-      setListOfEmployees(response.data);
-    });
+    axios
+      .get(
+        "http://http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/register"
+      )
+      .then((response) => {
+        setListOfEmployees(response.data);
+      });
   }, []);
 
   return (

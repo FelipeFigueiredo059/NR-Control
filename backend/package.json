@@ -27,5 +27,9 @@
     "sendgrid": "^5.2.3",
     "sequelize": "^6.32.0",
     "sequelize-cli": "^6.6.1"
+  },
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=16.0.0"
   }
 }
