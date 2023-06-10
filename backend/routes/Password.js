@@ -3,7 +3,7 @@ const router = express.Router();
 require("dotenv").config();
 const { Users } = require("../models");
 const { Token } = require("../models");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const { sign } = require("jsonwebtoken");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
