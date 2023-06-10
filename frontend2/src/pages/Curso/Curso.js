@@ -22,7 +22,7 @@ const Curso = () => {
   useEffect(() => {
     axios
       .get(
-        "http://http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/funcionario"
+        "http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/funcionario"
       )
       .then((response) => setUsers(response.data))
       .catch((err) => console.log(err));

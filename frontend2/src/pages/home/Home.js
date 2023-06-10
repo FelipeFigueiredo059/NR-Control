@@ -62,7 +62,7 @@ const HomePage = () => {
 
     axios
       .post(
-        "http://http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/register",
+        "http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/register",
         data,
         {
           headers: {

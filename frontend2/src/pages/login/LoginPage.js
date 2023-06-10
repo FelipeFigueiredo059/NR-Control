@@ -20,7 +20,7 @@ function LoginPage() {
     const data = { email: email, password: password };
     axios
       .post(
-        "http://http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/auth/login",
+        "http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/auth/login",
         data
       )
       .then((response) => {

@@ -12,7 +12,7 @@ function Password() {
   const enviarEmail = async (e) => {
     e.preventDefault();
     try {
-      const url = `http://http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/api/password-reset`;
+      const url = `http://sondaengenhariamds.sa-east-1.elasticbeanstalk.com/api/password-reset`;
       const { data } = await axios.post(url, { email });
       setMsg(data.message);
       setError("");
